@@ -7,5 +7,5 @@ ToDo list:
 - Implement unit test for web api
 - Save search by loged user
 - Retrive search
-- Record anonymous user searchs
+- Record anonymous user search
 
