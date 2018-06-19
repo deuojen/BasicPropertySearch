@@ -18,17 +18,27 @@ using Basic.API.BLL.DB.Entity;
 
 namespace Basic.API
 {
+
     /// <summary>
     /// 
     /// </summary>
     public class Startup
     {
+
+        /// <summary>
+        /// 
+        /// </summary>
+        private static readonly log4net.ILog log =
+                    log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         /// <summary>
         /// 
         /// </summary>
         /// <param name="app"></param>
         public void Configuration(IAppBuilder app)
         {
+            log.Info("Application Starting...");
+
             var config = new HttpConfiguration();
             JwtSecurityTokenHandler.InboundClaimTypeMap.Clear();
 
@@ -50,7 +60,7 @@ namespace Basic.API
                 cfg.CreateMap<SearchParametersModel, SearchParameters>();
             });
 
-            
+
 
             SwaggerConfig.Register(config);
             WebApiConfig.Register(config);

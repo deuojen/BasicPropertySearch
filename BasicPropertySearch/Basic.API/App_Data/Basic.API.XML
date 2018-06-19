@@ -294,6 +294,11 @@
             
             </summary>
         </member>
+        <member name="F:Basic.API.Startup.log">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="M:Basic.API.Startup.Configuration(Owin.IAppBuilder)">
             <summary>
             
