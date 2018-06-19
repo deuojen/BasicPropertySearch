@@ -43,6 +43,29 @@ namespace IdentityServer3.Host.Config
                     LogoutUri = "https://localhost:44301/Home/SignoutCleanup",
                     LogoutSessionRequired = true,
                 },
+                new Client
+                {
+                    ClientName = "Swagger UI",
+                    ClientId = "swagger_ui",
+                    Flow = Flows.Implicit,
+                    AllowAccessTokensViaBrowser = true,
+
+                    ClientSecrets = new List<Secret>
+                    {
+                        new Secret("secret".Sha256())
+                    },
+                    AllowedScopes = new List<string>
+                    {
+                        "write",
+                        "profile",
+                        "openid",
+                        "email"
+                    },
+                    RedirectUris = new List<string>
+                    {
+                        "https://localhost:44321/swagger/ui/o2c-html"
+                    }
+                }
             };
         }
     }

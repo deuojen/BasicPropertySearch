@@ -1,0 +1,304 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Basic.API</name>
+    </assembly>
+    <members>
+        <member name="T:Basic.API.SwaggerConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Basic.API.SwaggerConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.SwaggerConfig.AssignOAuth2SecurityRequirements">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Basic.API.SwaggerConfig.AssignOAuth2SecurityRequirements.Apply(Swashbuckle.Swagger.Operation,Swashbuckle.Swagger.SchemaRegistry,System.Web.Http.Description.ApiDescription)">
+            <summary>
+            
+            </summary>
+            <param name="operation"></param>
+            <param name="schemaRegistry"></param>
+            <param name="apiDescription"></param>
+        </member>
+        <member name="T:Basic.API.WebApiConfig">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Basic.API.WebApiConfig.Register(System.Web.Http.HttpConfiguration)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Basic.API.Controllers.HomeController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Basic.API.Controllers.HomeController.Index">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Basic.API.Controllers.PropertyController">
+            <summary>
+            Property search API
+            </summary>
+        </member>
+        <member name="M:Basic.API.Controllers.PropertyController.#ctor(Basic.API.BLL.DB.Repositories.Interfaces.IPropertyRepository)">
+            <summary>
+            
+            </summary>
+            <param name="PropertyRepository"></param>
+        </member>
+        <member name="M:Basic.API.Controllers.PropertyController.Get(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="id"></param>
+            <returns></returns>#
+        </member>
+        <member name="M:Basic.API.Controllers.PropertyController.Post(Basic.API.Models.SearchParametersModel)">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Basic.API.Controllers.UserController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Basic.API.Controllers.UserController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Basic.API.WebApiApplication">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Basic.API.WebApiApplication.Application_Start">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.Models.PropertyModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.PropertyId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.Title">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.ShortDescription">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.PropertyContent">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.Address">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.City">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.PostCode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.Price">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.Images">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.IsSold">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.NoOfBedrooms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.PropertyType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.PropertyModel.PropertyStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.Models.PropertyType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyType.House">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyType.Bungalow">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyType.FlatApartment">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyType.Land">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyType.Other">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.Models.PropertyStatus">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyStatus.ForSale">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyStatus.ForLet">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:Basic.API.Models.PropertyStatus.ForLease">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.Models.SearchHistoryModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchHistoryModel.User">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchHistoryModel.SearchParameters">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.Models.SearchParametersModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.Location">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.PropertyTypeList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.PropertyStatusList">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.MinPrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.MaxPrice">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.MinNoOfBedrooms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.MaxNoOfBedrooms">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.SearchParametersModel.IncludeSold">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.Models.UserModel">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.UserModel.UserId">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Basic.API.Models.UserModel.UserName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:Basic.API.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Basic.API.Startup.Configuration(Owin.IAppBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+        </member>
+    </members>
+</doc>

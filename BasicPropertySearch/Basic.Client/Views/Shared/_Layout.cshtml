@@ -1,42 +1,85 @@
-﻿<!DOCTYPE html>
-<html>
+﻿<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <meta name="keywords" content="Realty Expert Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <title>@ViewBag.Title - My Basic Property Search Application</title>
+    @Styles.Render("~/Content/realty_expert_css")
+    @*@Scripts.Render("~/bundles/modernizr")*@
+    <!-- web-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Yanone+Kaffeesatz:200,300,400,700" rel="stylesheet">
+    <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <!-- //web-fonts -->
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
+
+
+    <!-- banner -->
+    <div id="home" class="w3ls-banner">
+        <!-- header -->
+        <div class="header">
+            <div class="container">
+                <div class="logo">
+                    <h1><a href="index.html">Realty Expert</a></h1>
+                </div>
+                <div class="clearfix"> </div>
             </div>
         </div>
+        <!-- //header -->
+        <!-- top-nav -->
+        <nav class="cd-stretchy-nav edit-content">
+            <a class="cd-nav-trigger" href="#0"> Menu <span aria-hidden="true"></span> </a>
+            <ul>
+                <li><a href="#home" class="scroll"><span>Home</span></a></li>
+                <li><a href="#about" class="scroll"><span>About</span></a></li>
+                <li><a href="#services" class="scroll"><span>Services</span></a></li>
+                <li><a href="#portfolio" class="scroll"><span>Portfolio</span></a></li>
+                <li><a href="#blog" class="scroll"><span>Blog</span></a></li>
+                <li><a href="#news" class="scroll"><span>News</span></a></li>
+                <li><a href="#contact" class="scroll"><span>Contact</span></a></li>
+            </ul>
+            <span aria-hidden="true" class="stretchy-nav-bg"></span>
+        </nav>
+        <!-- //top-nav -->
+        <!-- banner-text -->
+        <div class="banner-w3ltext">
+            <div class="container">
+                <h3>Dignissimos at vero eos et</h3>
+                <h2>INTEGER GRAVIDA MAURIS NONMI <br>ODIO EFFICITUR.</h2>
+                <a href="#myModal" class="wthree-btn" data-toggle="modal">Read more</a>
+            </div>
+        </div>
+        <!-- //banner-text -->
     </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
+    <!-- //banner --> 
+    @RenderBody()
+    <!-- footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="social-icon">
+                <a href="#" class="social-button twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social-button facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="social-button google"><i class="fa fa-google-plus"></i></a>
+                <a href="#" class="social-button dribbble"><i class="fa fa-dribbble"></i></a>
+                <a href="#" class="social-button skype"><i class="fa fa-skype"></i></a>
+            </div>
+            <p>© 2017 Realty Expert. All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>
+        </div>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
+    <!-- //footer -->
+    @*@Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/bootstrap")*@
+    @Scripts.Render("~/bundles/realty_expert_jquery")
     @RenderSection("scripts", required: false)
 </body>
 </html>

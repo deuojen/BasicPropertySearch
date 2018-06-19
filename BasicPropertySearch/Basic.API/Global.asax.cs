@@ -9,12 +9,16 @@ using System.Web.Routing;
 
 namespace Basic.API
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class WebApiApplication : System.Web.HttpApplication
     {
+        /// <summary>
+        /// 
+        /// </summary>
         protected void Application_Start()
         {
-            
-            GlobalConfiguration.Configure(WebApiConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
